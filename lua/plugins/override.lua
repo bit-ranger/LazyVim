@@ -1,7 +1,6 @@
 --if true then
 --  return {}
 --end
-
 local override = {
   {
     "goolord/alpha-nvim",
@@ -63,6 +62,11 @@ local override = {
         textobject = "<leader>cc",
       },
     },
+  },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {},
   },
 }
 

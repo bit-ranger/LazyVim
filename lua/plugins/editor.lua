@@ -45,4 +45,15 @@ return {
       })
     end,
   },
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    keys = [[<M-=>]],
+    config = function()
+      require("toggleterm").setup({
+        open_mapping = [[<M-=>]],
+        direction = "float",
+      })
+    end,
+  },
 }

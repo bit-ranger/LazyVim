@@ -39,6 +39,34 @@ local override = {
     "nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
   },
+  {
+    "echasnovski/mini.bufremove",
+    keys = {
+      {
+        "qq",
+        function()
+          require("mini.bufremove").delete(0, false)
+        end,
+        desc = "Delete Buffer",
+      },
+    },
+  },
+  {
+    "echasnovski/mini.comment",
+    version = "*",
+    opt = {
+      options = {
+        mappings = {
+          comment = "<leader>/",
+          comment_line = "<leader>/",
+          textobject = "<leader>/",
+        },
+      },
+    },
+    config = function(_, opts)
+      require("mini.comment").setup(opts)
+    end,
+  },
 }
 
 return override

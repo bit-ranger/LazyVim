@@ -26,6 +26,9 @@ local override = {
   {
     "lewis6991/gitsigns.nvim",
     event = "VeryLazy",
+    opts = {
+      current_line_blame = true,
+    },
   },
   {
     "RRethy/vim-illuminate",
@@ -51,22 +54,16 @@ local override = {
       },
     },
   },
-  -- {
-  --   "echasnovski/mini.comment",
-  --   version = "*",
-  --   opt = {
-  --     options = {
-  --       mappings = {
-  --         comment = "<leader>/",
-  --         comment_line = "<leader>/",
-  --         textobject = "<leader>/",
-  --       },
-  --     },
-  --   },
-  --   config = function(_, opts)
-  --     require("mini.comment").setup(opts)
-  --   end,
-  -- },
+  {
+    "echasnovski/mini.comment",
+    opts = {
+      mappings = {
+        comment = "<leader>cc",
+        comment_line = "<leader>cc",
+        textobject = "<leader>cc",
+      },
+    },
+  },
 }
 
 return override

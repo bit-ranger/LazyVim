@@ -5,7 +5,6 @@
 vim.keymap.del({ "n" }, "<leader>l", {})
 local map = vim.keymap.set
 map("n", "<leader>L", "<cmd>:Lazy<cr>", { desc = "Lazy", silent = true })
-map("n", "<leader>cc", "<cmd>:lua MiniComment.operator('visual')<cr>", { desc = "Lazy", silent = true })
 map("n", "<A-left>", "<cmd>BufferLineCyclePrev<cr>", { silent = true })
 map("n", "<A-right>", "<cmd>BufferLineCycleNext<cr>", { silent = true })
 

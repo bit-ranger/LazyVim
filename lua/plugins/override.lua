@@ -51,22 +51,22 @@ local override = {
       },
     },
   },
-  {
-    "echasnovski/mini.comment",
-    version = "*",
-    opt = {
-      options = {
-        mappings = {
-          comment = "<leader>/",
-          comment_line = "<leader>/",
-          textobject = "<leader>/",
-        },
-      },
-    },
-    config = function(_, opts)
-      require("mini.comment").setup(opts)
-    end,
-  },
+  -- {
+  --   "echasnovski/mini.comment",
+  --   version = "*",
+  --   opt = {
+  --     options = {
+  --       mappings = {
+  --         comment = "<leader>/",
+  --         comment_line = "<leader>/",
+  --         textobject = "<leader>/",
+  --       },
+  --     },
+  --   },
+  --   config = function(_, opts)
+  --     require("mini.comment").setup(opts)
+  --   end,
+  -- },
 }
 
 return override

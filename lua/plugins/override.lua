@@ -1,8 +1,14 @@
--- disabled plugins
-local disabled = {
+--if true then
+--  return {}
+--end
 
+local override = {
   {
     "goolord/alpha-nvim",
+    enabled = false,
+  },
+  {
+    "folke/todo-comments.nvim",
     enabled = false,
   },
   {
@@ -19,8 +25,20 @@ local disabled = {
   },
   {
     "lewis6991/gitsigns.nvim",
-    event = { "VeryLazy" },
+    event = "VeryLazy",
+  },
+  {
+    "RRethy/vim-illuminate",
+    event = "VeryLazy",
+  },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    event = "VeryLazy",
+  },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    event = "VeryLazy",
   },
 }
 
-return disabled
+return override

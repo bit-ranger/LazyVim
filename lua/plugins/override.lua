@@ -11,6 +11,10 @@ local override = {
     enabled = false,
   },
   {
+    "ggandor/flit.nvim",
+    enabled = false,
+  },
+  {
     "SmiteshP/nvim-navic",
     event = "VeryLazy",
   },

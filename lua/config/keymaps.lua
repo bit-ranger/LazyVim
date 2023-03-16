@@ -23,3 +23,31 @@ map("n", "dle", "d$", opt)
 map("n", "clb", "c^", opt)
 map("n", "clB", "c0", opt)
 map("n", "cle", "c$", opt)
+
+function vim.getVisualSelection()
+  vim.cmd('noau normal! "vy"')
+  local text = vim.fn.getreg("v")
+  vim.fn.setreg("v", {})
+
+  text = string.gsub(text, "\n", "")
+  if #text > 0 then
+    return text
+  else
+    return ""
+  end
+end
+
+map({ "v" }, "<leader>/", function()
+  local text = vim.getVisualSelection()
+  require("telescope.builtin").current_buffer_fuzzy_find({ default_text = text })
+end, { desc = "Find in Files", silent = true })
+
+map({ "v" }, "<leader><leader>", function()
+  local text = vim.getVisualSelection()
+  require("telescope.builtin").find_files({ default_text = text })
+end, { desc = "Find Files", silent = true })
+
+map({ "v" }, "<leader>sg", function()
+  local text = vim.getVisualSelection()
+  require("telescope.builtin").live_grep({ default_text = text })
+end, { desc = "Grep", silent = true })

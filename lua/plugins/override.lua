@@ -71,6 +71,15 @@ local override = {
     "folke/which-key.nvim",
     event = "VeryLazy",
   },
+  {
+    "folke/tokyonight.nvim",
+    opts = {
+      style = "night",
+      on_colors = function(colors)
+        colors.bg_visual = "#214283"
+      end,
+    },
+  },
 }
 
 return override

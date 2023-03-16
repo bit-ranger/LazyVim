@@ -8,7 +8,7 @@ local opt = { silent = true }
 
 map({ "n", "v" }, "p", "pgvy", opt)
 
-map("n", "<leader>L", "<cmd>:Lazy<cr>", { desc = "Lazy", silent = true })
+map("n", "<leader>PL", "<cmd>:Lazy<cr>", { desc = "Lazy", silent = true })
 map("n", "<A-left>", "<cmd>BufferLineCyclePrev<cr>", opt)
 map("n", "<A-right>", "<cmd>BufferLineCycleNext<cr>", opt)
 

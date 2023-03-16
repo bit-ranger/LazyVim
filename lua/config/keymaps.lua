@@ -4,19 +4,22 @@
 
 vim.keymap.del({ "n" }, "<leader>l", {})
 local map = vim.keymap.set
+local opt = { silent = true }
+
+map({ "n", "v" }, "p", "pgvy", opt)
 
 map("n", "<leader>L", "<cmd>:Lazy<cr>", { desc = "Lazy", silent = true })
-map("n", "<A-left>", "<cmd>BufferLineCyclePrev<cr>", { silent = true })
-map("n", "<A-right>", "<cmd>BufferLineCycleNext<cr>", { silent = true })
+map("n", "<A-left>", "<cmd>BufferLineCyclePrev<cr>", opt)
+map("n", "<A-right>", "<cmd>BufferLineCycleNext<cr>", opt)
 
-map({ "n", "v" }, "lb", "^", { silent = true })
-map({ "n", "v" }, "lB", "0", { silent = true })
-map({ "n", "v" }, "le", "$", { silent = true })
+map({ "n", "v" }, "lb", "^", opt)
+map({ "n", "v" }, "lB", "0", opt)
+map({ "n", "v" }, "le", "$", opt)
 
-map("n", "dlb", "d^", { silent = true })
-map("n", "dlB", "d0", { silent = true })
-map("n", "dle", "d$", { silent = true })
+map("n", "dlb", "d^", opt)
+map("n", "dlB", "d0", opt)
+map("n", "dle", "d$", opt)
 
-map("n", "clb", "c^", { silent = true })
-map("n", "clB", "c0", { silent = true })
-map("n", "cle", "c$", { silent = true })
+map("n", "clb", "c^", opt)
+map("n", "clB", "c0", opt)
+map("n", "cle", "c$", opt)

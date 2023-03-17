@@ -1,7 +1,6 @@
 {
   "LazyVim": { "branch": "main", "commit": "6b740fd300d7b6dccd1dd2c722ee6a4c7a5b718a" },
   "LuaSnip": { "branch": "master", "commit": "a835e3d680c5940b61780c6af07885db95382478" },
-  "alpha-nvim": { "branch": "main", "commit": "3847d6baf74da61e57a13e071d8ca185f104dc96" },
   "bufferline.nvim": { "branch": "main", "commit": "3677aceb9a72630b0613e56516c8f7151b86f95c" },
   "catppuccin": { "branch": "main", "commit": "128af65c3a23c94b324dc8d7f02a34feee8722d4" },
   "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },
@@ -16,6 +15,7 @@
   "indent-blankline.nvim": { "branch": "master", "commit": "018bd04d80c9a73d399c1061fa0c3b14a7614399" },
   "lazy.nvim": { "branch": "main", "commit": "e27c9df5fe039e9d2833ef4fcf7305595d5ccda7" },
   "leap.nvim": { "branch": "main", "commit": "f74473d23ebf60957e0db3ff8172349a82e5a442" },
+  "lsp-inlayhints.nvim": { "branch": "main", "commit": "84ca3abe8aaecbb5b30ad89e4701d4a9c821b72c" },
   "lualine.nvim": { "branch": "master", "commit": "e99d733e0213ceb8f548ae6551b04ae32e590c80" },
   "marks.nvim": { "branch": "master", "commit": "76aca5069c5ce5c0099e30168649e6393e494f26" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "3924f2d264097b2caf13e713485dbc3e9d616574" },

@@ -58,4 +58,21 @@ return {
       })
     end,
   },
+  {
+    "lvimuser/lsp-inlayhints.nvim",
+    event = { "VeryLazy" },
+    config = function()
+      require("lsp-inlayhints").setup({
+        inlay_hints = {
+          parameter_hints = {
+            prefix = "",
+          },
+          type_hints = {
+            prefix = "",
+          },
+          highlight = "Comment",
+        },
+      })
+    end,
+  },
 }

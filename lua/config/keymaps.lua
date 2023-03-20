@@ -51,3 +51,7 @@ map({ "v" }, "<leader>sg", function()
   local text = vim.getVisualSelection()
   require("telescope.builtin").live_grep({ default_text = text })
 end, { desc = "Grep", silent = true })
+
+map({ "n", "v", "i" }, "<F1>", function()
+  vim.lsp.buf.signature_help()
+end, { desc = "Signature Help" })
